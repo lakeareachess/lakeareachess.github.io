@@ -109,10 +109,10 @@ LAChome.write("\n" + '                    <div class="dropdown">')
 LAChome.write("\n" + '                        <button class="dropbtn">Chess Tournaments</button>')
 LAChome.write("\n" + '                        <div class="dropdown-content">')
 for thugs in range(len(d2)):
-    if date >= arrow.get(i2[thugs], "M/D/YYYY"):
+    if date >= arrow.get(j2[thugs], "M/D/YYYY"):
         continue
-    elif date < arrow.get(i2[thugs], "M/D/YYYY"):
-        LAChome.write("\n" + '                            <a href="Tournaments/' + r2[thugs] + '.html">' + d2[thugs] + '</a>')
+    elif date < arrow.get(j2[thugs], "M/D/YYYY"):
+        LAChome.write("\n" + '                            <a href="Tournaments/' + d2[thugs] + '.html">' + d2[thugs] + '</a>')
 LAChome.write("\n" + '                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBI4i5PkiHpXEPjVms2GstaLb0_kRMcTuHdjkpptmYSYDGaw/viewform">Submit Tournament</a>')
 LAChome.write("\n" + "                        </div>")
 LAChome.write("\n" + "                    </div>")
@@ -122,8 +122,8 @@ LAChome.write("\n" + "        </table>")
 LAChome.write("\n" + "    </body>")
 LAChome.write("\n" + "</html>")
 entrylists = []
-for entries in range(len(c2)):
-    cfiles2.append(open("Tournaments/" + r2[entries] + ".html", "w"))
+for entries in range(len(d2)):
+    cfiles2.append(open("Tournaments/" + d2[entries] + ".html", "w"))
     cfiles2[entries].write("<!DOCTYPE html>")
     cfiles2[entries].write("\n" + "<html lang='en'>")
     cfiles2[entries].write("\n" + "    <head>")
@@ -142,37 +142,37 @@ for entries in range(len(c2)):
     cfiles2[entries].write("\n" + '                        <button class="dropbtn">Chess Tournaments</button>')
     cfiles2[entries].write("\n" + '                        <div class="dropdown-content">')
     for thugs in range(len(d2)):
-        if date >= arrow.get(i2[thugs], "M/D/YYYY"):
+        if date >= arrow.get(j2[thugs], "M/D/YYYY"):
             continue
-        elif date < arrow.get(i2[thugs], "M/D/YYYY"):
-            cfiles2[entries].write("\n" + '                            <a href="' + r2[thugs] + '.html">' + d2[thugs] + '</a>')
+        elif date < arrow.get(j2[thugs], "M/D/YYYY"):
+            cfiles2[entries].write("\n" + '                            <a href="' + d2[thugs] + '.html">' + d2[thugs] + '</a>')
     cfiles2[entries].write("\n" + '                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBI4i5PkiHpXEPjVms2GstaLb0_kRMcTuHdjkpptmYSYDGaw/viewform">Submit Tournament</a>')
     cfiles2[entries].write("\n" + "                        </div>")
     cfiles2[entries].write("\n" + "                    </div>")
     cfiles2[entries].write("\n" + "                </td>")
     cfiles2[entries].write("\n" + "            </tr>")
     cfiles2[entries].write("\n" + "        </table>")
-    cfiles2[entries].write("\n" + "        <h1>" + d2[entries] + "</h1>")
-    cfiles2[entries].write("\n" + "        <h2>" + h2[entries] + "-" + i2[entries] + "</h2>")
+    cfiles2[entries].write("\n" + "        <h1>" + e2[entries] + "</h1>")
+    cfiles2[entries].write("\n" + "        <h2>" + i2[entries] + "-" + j2[entries] + "</h2>")
     cfiles2[entries].write("\n" + '        <div id="forms">')
     cfiles2[entries].write("\n" + '            <div class="dropdown">')
     cfiles2[entries].write("\n" + '                <button class="dropbtn">Forms</button>')
     cfiles2[entries].write("\n" + '                <div class="dropdown-content">')
-    cfiles2[entries].write("\n" + '                    <a href="' + p2[entries] + '">Registration Form</a>')
-    cfiles2[entries].write("\n" + '                    <a href="' + q2[entries] + '">Withdrawal Form</a>')
+    cfiles2[entries].write("\n" + '                    <a href="' + q2[entries] + '">Registration Form</a>')
+    cfiles2[entries].write("\n" + '                    <a href="' + r2[entries] + '">Withdrawal Form</a>')
     cfiles2[entries].write("\n" + '                    <a href="' + s2[entries] + '">Entry List</a>')
     cfiles2[entries].write("\n" + '                </div>')
     cfiles2[entries].write("\n" + '            </div>')
     cfiles2[entries].write("\n" + '        </div>')
-    cfiles2[entries].write("\n" + "        <p>" + e2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Tournament Format: " + f2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Prizes: " + g2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Round Times: " + j2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Location: " + k2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Entry Fee: " + l2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Byes: " + n2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p>Contact: " + o2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>" + f2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Tournament Format: " + g2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Prizes: " + h2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Round Times: " + k2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Location: " + l2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Entry Fee: " + m2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Byes: " + o2[entries] + "</p>")
+    cfiles2[entries].write("\n" + "        <p>Contact: " + p2[entries] + "</p>")
     cfiles2[entries].write("\n" + "        <p>Entry Limit: " + c2[entries] + "</p>")
-    cfiles2[entries].write("\n" + "        <p><b><u><i>Other Requirements: " + m2[entries] + "</b></u></i></p>")
+    cfiles2[entries].write("\n" + "        <p><b><u><i>Other Requirements: " + n2[entries] + "</b></u></i></p>")
     cfiles2[entries].write("\n" + "    </body>")
     cfiles2[entries].write("\n" + "</html>")

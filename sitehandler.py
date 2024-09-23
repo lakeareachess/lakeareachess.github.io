@@ -112,7 +112,7 @@ for thugs in range(len(d2)):
     if date >= arrow.get(j2[thugs], "M/D/YYYY"):
         continue
     elif date < arrow.get(j2[thugs], "M/D/YYYY"):
-        LAChome.write("\n" + '                            <a href="Tournaments/' + d2[thugs] + '.html">' + d2[thugs] + '</a>')
+        LAChome.write("\n" + '                            <a href="Tournaments/' + d2[thugs] + '.html">' + e2[thugs] + '</a>')
 LAChome.write("\n" + '                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBI4i5PkiHpXEPjVms2GstaLb0_kRMcTuHdjkpptmYSYDGaw/viewform">Submit Tournament</a>')
 LAChome.write("\n" + "                        </div>")
 LAChome.write("\n" + "                    </div>")
@@ -145,7 +145,7 @@ for entries in range(len(d2)):
         if date >= arrow.get(j2[thugs], "M/D/YYYY"):
             continue
         elif date < arrow.get(j2[thugs], "M/D/YYYY"):
-            cfiles2[entries].write("\n" + '                            <a href="' + d2[thugs] + '.html">' + d2[thugs] + '</a>')
+            cfiles2[entries].write("\n" + '                            <a href="' + d2[thugs] + '.html">' + e2[thugs] + '</a>')
     cfiles2[entries].write("\n" + '                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBI4i5PkiHpXEPjVms2GstaLb0_kRMcTuHdjkpptmYSYDGaw/viewform">Submit Tournament</a>')
     cfiles2[entries].write("\n" + "                        </div>")
     cfiles2[entries].write("\n" + "                    </div>")

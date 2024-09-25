@@ -1,7 +1,9 @@
 import schedule
 import time
 import os
-schedule.every(300).seconds.do(os.system("update.bat"))
+def run():
+    os.system("update.bat")
+schedule.every(300).seconds.do(run)
 while True:
     schedule.run_pending()
     time.sleep(1)
